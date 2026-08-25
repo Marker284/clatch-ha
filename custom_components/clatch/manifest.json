@@ -1,0 +1,11 @@
+{
+  "domain": "clatch",
+  "name": "Clatch Cycle Tracker",
+  "codeowners": ["@Marker284"],
+  "config_flow": true,
+  "documentation": "https://github.com/Marker284/clatch-ha",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Marker284/clatch-ha/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Подключение Clatch",
+        "description": "Токен (JWT) и ID профиля — те же, что используются в существующих скриптах (token.txt / PROFILE_ID). ID профиля можно взять как свой, так и партнёрский (полученный через sharing/in).",
+        "data": {
+          "name": "Название",
+          "token": "Токен Clatch API (JWT)",
+          "profile_id": "ID профиля"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Токен недействителен или истёк",
+      "cannot_connect": "Не удалось подключиться к Clatch API",
+      "unknown": "Неизвестная ошибка"
+    },
+    "abort": {
+      "already_configured": "Этот профиль уже подключён"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval_minutes": "Интервал опроса (минуты)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "cycle_day": { "name": "День цикла" },
+      "phase": { "name": "Фаза цикла" },
+      "days_until_period": { "name": "Дней до месячных" },
+      "days_until_period_end": { "name": "Дней до конца месячных" },
+      "days_until_ovulation": { "name": "Дней до овуляции" },
+      "next_period_start": { "name": "Дата следующих месячных" },
+      "ovulation_date": { "name": "Дата овуляции" },
+      "last_period_start": { "name": "Начало последних месячных" },
+      "avg_period_length": { "name": "Средняя длительность месячных" },
+      "last_diary_entry": { "name": "Последняя запись дневника" }
+    },
+    "binary_sensor": {
+      "period_active": { "name": "Месячные сейчас" }
+    }
+  }
+}
